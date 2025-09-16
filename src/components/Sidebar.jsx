@@ -25,6 +25,14 @@ function Sidebar() {
                     </li>
                     <li>
                         <NavLink
+                            to="/posts"
+                            className={({ isActive }) => isActive ? 'active' : ''}
+                        >
+                            Посты
+                        </NavLink>
+                    </li>
+                    <li>
+                        <NavLink
                             to="/conclusion"
                             className={({ isActive }) => isActive ? 'active' : ''}
                         >
