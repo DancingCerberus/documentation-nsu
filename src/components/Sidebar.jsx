@@ -1,5 +1,5 @@
 import { NavLink } from 'react-router-dom';
-import '../App.css'; // если хочешь выносить стили отдельно
+import '../App.css';
 
 function Sidebar() {
     return (
