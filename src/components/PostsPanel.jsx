@@ -1,4 +1,5 @@
 import { useState, useEffect, useMemo } from "react";
+import axios from "axios";
 
 function PostsPanel() {
     const [postCount, setPostCount] = useState(0);
@@ -8,12 +9,8 @@ function PostsPanel() {
         async function fetchPosts() {
             const url = "https://jsonplaceholder.typicode.com/posts";
             try {
-                const response = await fetch(url);
-                if (!response.ok) {
-                    throw new Error(`Response status: ${response.status}`);
-                }
-                const result = await response.json();
-                setPosts(result);
+                const response = await axios.get(url);
+                setPosts(response.data);
             } catch (error) {
                 console.error(error.message);
             }
