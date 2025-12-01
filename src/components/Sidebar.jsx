@@ -39,6 +39,14 @@ function Sidebar() {
                             Заключение
                         </NavLink>
                     </li>
+                    <li>
+                        <NavLink
+                            to="/api-ui"
+                            className={({ isActive }) => isActive ? 'active' : ''}
+                        >
+                            API
+                        </NavLink>
+                    </li>
                 </ul>
             </nav>
         </aside>

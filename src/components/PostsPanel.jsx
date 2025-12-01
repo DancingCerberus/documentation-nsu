@@ -7,7 +7,7 @@ function PostsPanel() {
 
     useEffect(() => {
         async function fetchPosts() {
-            const url = "https://jsonplaceholder.typicode.com/posts";
+            const url = "/api/posts";
             try {
                 const response = await axios.get(url);
                 setPosts(response.data);
