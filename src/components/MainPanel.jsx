@@ -4,7 +4,7 @@ function MainPanel() {
             <h1>
                 Разработка системы генерации учебно-методических материалов для малоресурсных языков с применением нейронных сетей.
             </h1>
-            <h2>Описание</h2>
+            <h2 className="content__heading">Описание</h2>
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga mollitia nesciunt perferendis quo quod repellendus soluta sunt? Consectetur, facere saepe.
             </p>
@@ -14,9 +14,9 @@ function MainPanel() {
                 temporibus tenetur ullam voluptatem voluptatibus. Culpa maxime necessitatibus obcaecati reprehenderit veniam! Cumque
                 dolore, excepturi ipsa nam nobis sapiente. Commodi ex iure laudantium nemo numquam odit reiciendis vero.
             </p>
-            <h2>Пример</h2>
-            <img src="../../public/bert.png" alt="Bert"/>
-            <table>
+            <h2 className="content__heading">Пример</h2>
+            <img className="content__image" src="../../public/bert.png" alt="Bert"/>
+            <table className="content__table">
                 <thead>
                 <tr>
                     <th scope="col">Название модели</th>
@@ -38,8 +38,8 @@ function MainPanel() {
                 </tr>
                 </tbody>
             </table>
-            <h2>Модули</h2>
-            <ul className="content-list">
+            <h2 className="content__heading">Модули</h2>
+            <ul className="content__list">
                 <li>Tokenizer</li>
                 <li>Embedding</li>
                 <li>Encoder</li>

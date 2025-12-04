@@ -1,10 +1,11 @@
 import SwaggerUI from "swagger-ui-react";
 import "swagger-ui-react/swagger-ui.css";
+import { API_BASE_URL } from '../config';
 
 function ApiPanel() {
     return (
         <div className="content">
-            <SwaggerUI url="http://127.0.0.1:8000/openapi.json" />;
+            <SwaggerUI url={`${API_BASE_URL}/openapi.json`} />;
         </div>
     )
 }

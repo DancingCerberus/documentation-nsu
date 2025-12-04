@@ -30,8 +30,9 @@ function PostsPanel() {
     return (
         <div className="content">
             <h1>Посты</h1>
-            <h2>Количество постов: {postCount}</h2>
+            <h2 className="content__heading">Количество постов: {postCount}</h2>
             <input
+                className="content__range-input"
                 type="range"
                 min="0"
                 max="50"
@@ -41,7 +42,7 @@ function PostsPanel() {
             />
             <ul>
                 {displayedPosts.map((post) => (
-                    <li className={"content-list"} key={post.id}>
+                    <li className="content__list" key={post.id}>
                         <strong>{post.title}</strong>
                         <p>{post.body}</p>
                     </li>
